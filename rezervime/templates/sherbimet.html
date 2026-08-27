@@ -49,7 +49,7 @@
 
   <section>
     <div class="container">
-{%% for service in sherbimets %}
+{% for service in sherbimets %}
       <div class="service-detail reveal">
        {{service.service_svg|safe}}
         <div>
@@ -59,7 +59,7 @@
         <span class="service-price">Nga {{ service.service_price }} Lekë</span>
       </div>
 
-{%% endfor %}
+{% endfor %}
 
     </div>
   </section>
