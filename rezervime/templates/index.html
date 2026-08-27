@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perla Dental — Klinikë Dentare</title>
+<meta name="description" content="Perla Dental — kujdes dentar modern, i kujdesshëm dhe pa stres. Cakto vizitën tënde online.">
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="{% url 'index' %}" class="brand">
+      <img src="{% static 'imazh.png' %}" alt="Perla Dental" class="brand-mark">
+      <span>Perla <small>Klinikë Dentare</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="{% url 'index' %}" class="active">Kryefaqja</a></li>
+      <li><a href="{% url 'sherbimet' %}">Shërbimet</a></li>
+      <li><a href="{% url 'rreth-nesh' %}">Rreth Nesh</a></li>
+      <li><a href="{% url 'kontakt' %}">Kontakt</a></li>
+    </ul>
+    <div class="nav-cta">
+      <span class="nav-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.2 1.1L6.6 10.8z" stroke="#1B4A41" stroke-width="1.5"/></svg>
+        +355 69 123 4567
+      </span>
+      <a href="{% url 'kontakt' %}" class="btn btn-primary">Cakto Vizitë</a>
+      <button class="nav-toggle" aria-label="Hap menynë" aria-expanded="false"><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <p class="eyebrow">Klinikë dentare në Tiranë</p>
+        <h1>Kujdes dentar që <em>respekton</em> buzëqeshjen tënde</h1>
+        <p class="hero-sub">Nga kontrolli i thjeshtë deri te implantologjia — ekipi ynë kombinon teknologji moderne me qasje njerëzore, pa ankth dhe pa surpriza në faturë.</p>
+        <div class="hero-actions">
+          <a href="kontakt.html" class="btn btn-primary">Cakto vizitën tënde</a>
+          <a href="sherbimet.html" class="btn btn-ghost">Shiko shërbimet</a>
+        </div>
+        <div class="hero-trust">
+          <div><strong>10+</strong><span>Vite Përvojë</span></div>
+          <div><strong>4.9/5</strong><span>Vlerësim Pacientësh</span></div>
+          <div><strong>500+</strong><span>Buzëqeshje Trajtuar</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-orbit" aria-hidden="true"></div>
+      <img src="{% static 'imazh.png' %}" alt="Perla Dental — ilustrim dhëmbi" class="tooth-hero">
+      </div>
+    </div>
+  </section>
+
+  <svg class="gumline" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 24 C 100 4, 200 44, 300 24 S 500 4, 600 24 S 800 44, 900 24 S 1100 4, 1200 24"/>
+  </svg>
+
+  <!-- WHY US -->
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <h2>Pse pacientët zgjedhin Perla</h2>
+        <p>Çdo detaj i klinikës — nga takimi i parë deri te ndjekja pas trajtimit — mendohet për rehatinë tënde.</p>
+      </div>
+      <div class="feature-row">
+        <div class="feature reveal">
+          <span class="feature-num">01</span>
+          <div>
+            <h4>Diagnostikim me skanim 3D</h4>
+            <p>Përdorim radiografi dixhitale me dozë të ulët rrezatimi, për një plan trajtimi të saktë që në vizitën e parë.</p>
+          </div>
+        </div>
+        <div class="feature reveal">
+          <span class="feature-num">02</span>
+          <div>
+            <h4>Çmim i qartë, pa surpriza</h4>
+            <p>Para çdo trajtimi merr një kosto të plotë me shkrim — asnjë zë shtesë të pashpjegueshëm në faturë.</p>
+          </div>
+        </div>
+        <div class="feature reveal">
+          <span class="feature-num">03</span>
+          <div>
+            <h4>Kujdes pa ankth</h4>
+            <p>Anestezi e butë, ambient qetësues dhe një ekip që shpjegon çdo hap — edhe për pacientët me frikë nga dentisti.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="gumline flip" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 24 C 100 4, 200 44, 300 24 S 500 4, 600 24 S 800 44, 900 24 S 1100 4, 1200 24"/>
+  </svg>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="section-mint">
+    <div class="container">
+      <div class="section-head">
+        <h2>Shërbimet tona kryesore</h2>
+       
+      </div>
+      <div class="card-grid">
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none"><path d="M12 3c-2.6 0-4.3 1.5-6 1.5S3.5 6.3 3.5 9.8c0 3.6 1.3 8.2 2.6 10.8.7 1.4 1.4 2.4 2.3 2.4 1.1 0 1.3-3 2.4-3s1.3 3 2.4 3 1.3-3 2.4-3 1.2 3 2.4 3c.9 0 1.6-1 2.3-2.4 1.3-2.6 2.6-7.2 2.6-10.8 0-3.5-1.1-4.3-3-4.3-1.7 0-3.4-1.5-6-1.5z" stroke="currentColor" stroke-width="1.6"/></svg>
+          <h3>Kontroll &amp; Higjienizim</h3>
+          <p>Pastrim profesional dhe kontroll i plotë çdo 6 muaj për parandalim afatgjatë.</p>
+          <span class="service-price">Nga 3.500 Lekë</span>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none"><path d="M5 3l1.5 4.5L11 9l-4.5 1.5L5 15l-1.5-4.5L-1 9l4.5-1.5L5 3z" transform="translate(1)" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M17 11l1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          <h3>Zbardhim Dentar</h3>
+          <p>Zbardhim profesional në klinikë me rezultate deri në 6 nuanca më të bardha.</p>
+          <span class="service-price">Nga 12.000 Lekë</span>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.6"/><path d="M8 12l2.5 2.5L16 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Implantologji</h3>
+          <p>Implante titani me garanci afatgjatë dhe plan trajtimi të personalizuar.</p>
+          <span class="service-price">Nga 45.000 Lekë</span>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none"><path d="M4 8c2-3 5-5 8-5s6 2 8 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M4 8v3c0 5 3.5 9 8 10 4.5-1 8-5 8-10V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Ortodonci</h3>
+          <p>Aparate fikse dhe aligner të tejdukshëm për çdo moshë.</p>
+          <span class="service-price">Nga 60.000 Lekë</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Çfarë thonë pacientët</h2>
+        <p>Disa fjalë nga njerëz që kanë kaluar nga dera jonë.</p>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <p class="testi-quote">"Hera e parë që dola nga dentisti pa ankth. Çdo hap mu shpjegua qartë përpara se të fillonte."</p>
+          <span class="testi-name">Elira Mara</span><br>
+          <span class="testi-role">Paciente prej 2022</span>
+        </div>
+        <div class="testi-card reveal">
+          <p class="testi-quote">"Bëra implantin këtu pas dy konsultash të tjera që nuk më bindën. Procesi ishte krejt transparent."</p>
+          <span class="testi-name">Arbi Kola</span><br>
+          <span class="testi-role">Paciente prej 2021</span>
+        </div>
+        <div class="testi-card reveal">
+          <p class="testi-quote">"Cova djalin tim 7-vjeç dhe u mrekullua , stafi di si të flasë me fëmijët."</p>
+          <span class="testi-name">Dori Lala</span><br>
+          <span class="testi-role">Prindi i pacientit</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h2>Gati për një buzëqeshje më të shëndetshme?</h2>
+          <p>Vizita fillestare përfshin kontroll të plotë dhe plan trajtimi pa asnjë detyrim.</p>
+        </div>
+        <a href="kontakt.html" class="btn btn-light">Cakto Vizitë Falas</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">Perla Dental</p>
+        <p>Klinikë dentare moderne në zemër të Tiranës — kujdes i kujdesshëm për çdo buzëqeshje.</p>
+      </div>
+      <div>
+        <h5>Faqet</h5>
+        <ul>
+          <li><a href="{% url 'index' %}">Kryefaqja</a></li>
+          <li><a href="{% url 'sherbimet' %}">Shërbimet</a></li>
+          <li><a href="{% url 'rreth-nesh' %}">Rreth Nesh</a></li>
+          <li><a href="{% url 'kontakt' %}">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Shërbime</h5>
+        <ul>
+          <li><a href="{% url 'sherbimet' %}">Higjienizim</a></li>
+          <li><a href="{% url 'sherbimet' %}">Zbardhim</a></li>
+          <li><a href="{% url 'sherbimet' %}">Implantologji</a></li>
+          <li><a href="{% url 'sherbimet' %}">Ortodonci</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Kontakt</h5>
+        <ul>
+          <li>Rr. Myslym Shyri, Tiranë</li>
+          <li>+355 69 123 4567</li>
+          <li>perladental@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Perla Dental. Të gjitha të drejtat e rezervuara.</span>
+      <span>Hënë–Shtunë · 09:00–19:00</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
